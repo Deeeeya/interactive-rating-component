@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 25vh;
+  background-color: hsl(228, 11%, 9%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  font-family: "Overpass", serif;
+  overflow: hidden;
+}
+
+#ratingStart {
+  width: 370px;
+  height: 380px;
+  background: linear-gradient(
+    to bottom,
+    hsl(213, 19%, 18%),
+    hsl(215, 27%, 12%)
+  );
+  border-radius: 25px;
+  margin-right: 25px;
+}
+
+#star {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  left: 22px;
+  top: 25px;
+  background-color: hsl(215, 18%, 19%);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  margin: 55px 0 0 25px;
+}
+
+#description {
+  font-size: 14px;
+  margin: 5px 30px 0 25px;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+#circles {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 30px;
+}
+
+.ratings {
+  width: 49px;
+  height: 49px;
+  background-color: hsl(215, 18%, 19%);
+  border-radius: 100%;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ratings:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+  opacity: 1;
+}
+
+.ratings.active {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+#submitButton {
+  width: 320px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: hsl(25, 97%, 53%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto auto auto;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  border: none;
+}
+
+#submitButton:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+#ratingEnd {
+  width: 370px;
+  height: 380px;
+  background: linear-gradient(
+    to bottom,
+    hsl(213, 19%, 18%),
+    hsl(215, 27%, 12%)
+  );
+  border-radius: 25px;
+  margin-right: 25px;
+}
+
+#thankYouPic {
+  margin: auto 5.8em;
+  margin-top: 40px;
+}
+
+.selectionWrap {
+  width: 50%;
+  height: 25px;
+  background-color: hsl(215, 18%, 19%);
+  border-radius: 40px;
+  margin: 0 6em;
+  margin-top: 20px;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.selection {
+  font-size: 14px;
+  color: hsl(25, 97%, 53%);
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+#userRating {
+  display: flex;
+  justify-content: center;
+}
+
+#thanksAgain {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#appreciation {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.5;
+  padding: 0 25px 0 25px;
+  margin-top: 18px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+#ratingEnd {
+  display: none;
+}

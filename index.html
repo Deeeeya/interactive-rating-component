@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div class="ratingStart" id="ratingStart">
+      <div id="star"><img src="images/icon-star.svg" alt="star" /></div>
+      <h1 id="title">How did we do?</h1>
+      <p id="description">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div id="circles">
+        <a class="ratings" id="ratings" onclick="userValue='1'">1</a>
+        <a class="ratings" id="ratings" onclick="userValue='2'">2</a>
+        <a class="ratings" id="ratings" onclick="userValue='3'">3</a>
+        <a class="ratings" id="ratings" onclick="userValue='4'">4</a>
+        <a class="ratings" id="ratings" onclick="userValue='5'">5</a>
+      </div>
+      <button id="submitButton" type="submit">SUBMIT</button>
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="ratingEnd" id="ratingEnd">
+      <img
+        src="images/illustration-thank-you.svg"
+        alt="phone"
+        id="thankYouPic"
+      />
+      <div class="selectionWrap">
+        <p class="selection">You selected</p>
+        <p id="userRating" class="selection"></p>
+        <p class="selection">out of 5</p>
+      </div>
+      <h2 id="thanksAgain">Thank you!</h2>
+      <h6 id="appreciation">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </h6>
+    </div>
+    <!-- Thank you state end -->
+    <script src="script.js"></script>
+  </body>
+</html>
